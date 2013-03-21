@@ -5,6 +5,7 @@ require 'active_model'
 require './lib/user'
 require './lib/search'
 require './lib/result'
+require './lib/direction'
 
 
 SENSOR = 'false'

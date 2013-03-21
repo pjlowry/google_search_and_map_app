@@ -1,11 +1,22 @@
 USER STORIES:
 
-As a user, I want to be able to be able to enter the 'radius' of how far I'm willing to walk (in meters). *convert
+PENDING:
+
+As a user, I want to be able to get directions from where I'm at to the bar b/c I'm probably drunk.
+
+As a user, I want it to pick a bar for me b/c I'm drunk and I can't decide.
+
+As a user, I want to be able to enter the address instead of longitude and latitude.
+
+
+
+
+
+DONE:
+
+As a user, I want to be able to be able to enter the 'radius' of how far I'm willing to walk (in meters).
 
 As a user, I want to be able to search for a bar within my area.
 
 As a user, I want to be able to to get a list of bars within my search radius
 
-As a user, I want to be able to get directions from where I'm at to the bar b/c I'm probably drunk.
-
-As a user, I want it to pick a bar for me b/c I'm drunk and I can't decide.

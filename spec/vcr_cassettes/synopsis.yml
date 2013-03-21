@@ -23,7 +23,7 @@ http_interactions:
       Vary:
       - Accept-Language
       Date:
-      - Wed, 20 Mar 2013 23:11:25 GMT
+      - Thu, 21 Mar 2013 00:22:01 GMT
       Server:
       - mafe
       Cache-Control:
@@ -42,8 +42,8 @@ http_interactions:
         \        \"icon\" : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
         \        \"id\" : \"9ac2eab73427294f194df6ea934c3b1476e0841d\",\n         \"name\"
         : \"Lucca Restaurant & Bar\",\n         \"opening_hours\" : {\n            \"open_now\"
-        : false\n         },\n         \"price_level\" : 2,\n         \"rating\" :
-        4.10,\n         \"reference\" : \"CoQBdQAAAKYkBke0VrsdVOXmCnKp4wy5SqKxrhuQVyWS_cturTd708tsiLT1ASuXMJZ6Ne_4RL7oF9lVQDEzHfoqT84UkW30vLTz0Ird29LdVBlRMuB92wkLIW1zeP2BJ_7mNmIBJXw0yiTQQzsgwBMuflqHOEJ_EbH5X0BytKCN8O6WZ2MtEhBK1Kg0J7OXn4GHJV4nhUK0GhRvCF5KXQTzVhv0xcaUdQetM1zFkg\",\n
+        : true\n         },\n         \"price_level\" : 2,\n         \"rating\" :
+        4.10,\n         \"reference\" : \"CoQBdQAAAJrBFyvpa3JZ8AOcyR27PnpJO1m9sPEc5uAVNl-Tf56MRAYsvgAMBfbTToixgSCihm3gWsJFXLjrPi7PTOpT34ovhQ76E0UdBgrxYgn_HdeZszTpv-G0m2_M6D9duHnEidTslsXZ5zuJjWRoeEeHuVElbKcxiSCS6Jje9qmbvr00EhAZY5lRrD8Wi1lPAyibWTUsGhTT5uDYU3GhgD5W120HHNiaNnq4TA\",\n
         \        \"types\" : [ \"restaurant\", \"food\", \"establishment\" ],\n         \"vicinity\"
         : \"1615 J Street, Sacramento\"\n      },\n      {\n         \"geometry\"
         : {\n            \"location\" : {\n               \"lat\" : 38.5786940,\n
@@ -52,7 +52,7 @@ http_interactions:
         \        \"id\" : \"d936f7d8fe79c094c47635a811458074be78856e\",\n         \"name\"
         : \"Michelangelo's Restaurant\",\n         \"opening_hours\" : {\n            \"open_now\"
         : true\n         },\n         \"price_level\" : 2,\n         \"rating\" :
-        4.0,\n         \"reference\" : \"CoQBdwAAAA8f3EDJcolCSZnhVvRga5JsZeziZAppwTXe5a_Vprfu0g9vQMLAzu6Ye7d__LAwa3VcIJuvngYm_qeQEaRjd2MokKrg9qrYCcUgqzFjV5kgsG3aq76E1sc03Oqo-tFIu6K9tOd_CRBm6U8eR-GBi3DsuiyjT9dmAmtwiCmPHmbFEhAEZRaHg3vcjhwZNW8lVVw2GhTi0vBpSppq0ppCyMMmlfHsPgs_xA\",\n
+        4.0,\n         \"reference\" : \"CoQBdwAAAORZGaejf5PnLHolq_n_-qsTLqFVVuKg3ddmvBcZEiyT5AE9xL4C8uJiLLCaIJbbLXLAl1zYQAH4hzU-ctegXSvo-3LNL78zAuL34q4fS0sSkKnzihYMfczd2Ph1ixmlMDzlaL4wpfmMcpIqMIAIpoCHjOWG4jLuS85gaueOHRRkEhA3UMC9OQu2p8LrNPR1JOwCGhQccXCA1tt7QaRPlGJioKHvLk-5SA\",\n
         \        \"types\" : [ \"restaurant\", \"food\", \"establishment\" ],\n         \"vicinity\"
         : \"1725 I Street, Sacramento\"\n      },\n      {\n         \"geometry\"
         : {\n            \"location\" : {\n               \"lat\" : 38.5772270,\n
@@ -61,7 +61,7 @@ http_interactions:
         : \"9de33c32f3858b0b1cd29b12d537931b747bee6f\",\n         \"name\" : \"Streets
         of London Pub\",\n         \"opening_hours\" : {\n            \"open_now\"
         : true\n         },\n         \"price_level\" : 1,\n         \"rating\" :
-        3.40,\n         \"reference\" : \"CoQBdAAAAHq5B1X6wAnkimLhyNRHuzekwq8X55Nn8ALDmC0FToO5c5LTtN-BGR_HOFfKST1z4Y5fNKQ0j6bk_OFzEg_RwyLF-KR0lX7s77m3PI1DP_pMu-uEALN5_7dEKrTza9yONMOVYfXdUGL6raPaz5nffJj84nJ4WiRJ4N7wLlmKUKD6EhBGvRDIB4_T9XkQOtAM8sdoGhQVX1PDs6Pkg_1drU-NjxXy1sx0yA\",\n
+        3.40,\n         \"reference\" : \"CoQBdAAAAPUBWWXdxrwg-FePhK6fTwvBHGHYx16sm6KNGLc59KK2rpwH6aLflF_rMAoafZWvEFFvSxVUfXtmsvCUy2C3O2pMZA11ANhnP7SqQKbmpBw1JcCHl608Jb1nb_lH8MeuQqFpyxo9JFylDYuKapfXHKkGeRkzEZBHeKaXgP90--YZEhDK1EM5DsHoE8DQkULssR4rGhQVlhEB2jPfiNvdtstOeNDf2aEpdw\",\n
         \        \"types\" : [ \"bar\", \"restaurant\", \"food\", \"establishment\"
         ],\n         \"vicinity\" : \"1804 J Street, Sacramento\"\n      },\n      {\n
         \        \"geometry\" : {\n            \"location\" : {\n               \"lat\"
@@ -70,10 +70,10 @@ http_interactions:
         \        \"id\" : \"a454eff94ce978ef7c29c8daac5935ca9dd6719f\",\n         \"name\"
         : \"Bread Store\",\n         \"opening_hours\" : {\n            \"open_now\"
         : true\n         },\n         \"rating\" : 3.80,\n         \"reference\" :
-        \"CnRpAAAAmv8WQLBPGzQjZKrrLamB7vpTifEhhO75f-WQfFAsoVaUBMit2pgUSNX4eCGvy1tnkgRF-WU3vti-bZG7c46LAtFzJ1ykRnlMWxCvAEX5U8hl57v0rPMsm16atIwZTeTqWHVkXN6AS1_wXl3nlsgxCxIQ4tmPZcD-Yi835pwlzUTosxoUQG2ptyivhmUYB31EnCRC50Fp6X8\",\n
+        \"CnRpAAAAKf3guWXST-cfXouQOTzJGybJdWL3sVCJdgvNrDixedibzyTDySOtCH-4rE1aHKxxJar8tu1eIWMjBVg5M2h5xmdhrhM_8WDoKnAsVb--twkrjgfWNBSsjDbdl749xWXKRLuSJQbuAYYk6Gx4yOzd7xIQycWL0TJlQyMcp1Y-_zY2GBoUBz1bdPEZqFj1Rl3PdHPvKP0tMkA\",\n
         \        \"types\" : [ \"store\", \"meal_takeaway\", \"restaurant\", \"food\",
         \"establishment\" ],\n         \"vicinity\" : \"1716 J Street, Sacramento\"\n
         \     }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: 
-  recorded_at: Wed, 20 Mar 2013 23:11:25 GMT
+  recorded_at: Thu, 21 Mar 2013 00:22:01 GMT
 recorded_with: VCR 2.4.0

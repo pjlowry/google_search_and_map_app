@@ -53,10 +53,11 @@ def list(results_array)
     when 'p'
       pick(results_array)
     when 'r'
-      random
+      random(results_array)
     else
     invalid
   end
+end
 
 def pick(results_array)
   puts "Please select the number of the destination:"
@@ -64,6 +65,8 @@ def pick(results_array)
   direction = Direction.new(result_array[choice - 1])
 end
 
+def random(results_array)
+  puts "You are going here .........."
 end
 
 

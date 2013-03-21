@@ -21,6 +21,6 @@ class Search
 
     body = JSON.parse(get_response.body)
 
-    results = body['results'].inject([]) { |results, place| results << Result.new(:name => place['name'], :address => place['vicinity']) }
+    results = body['results'].inject([]) { |results, place| results << Result.new(:name => place['name'], :address => place['vicinity'], :lat => place['geometry']['location']['lat'].to_s, :lng => place['geometry']['location']['lng'].to_s) }
   end
 end
