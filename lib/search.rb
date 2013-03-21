@@ -1,18 +1,23 @@
 class Search
   include ActiveModel::Validations
-  attr_accessor :latitude, :longitude, :radius, :keyword
+  attr_reader :search_latitude, :search_longitude, :address, :radius, :keyword
   
   validates :radius, :length => { :maximum => 4 }
-  validates :latitude, :longitude, :radius, :keyword, :presence => true
+  validates :radius, :keyword, :address, :presence => true
 
   def initialize(options)
-    @latitude = options[:latitude]
-    @longitude = options[:longitude]
     @radius = options[:radius]
     @keyword = options[:keyword]
+    @address = options[:address]
 
-    location = "#{latitude},#{longitude}"
-    @required = URI.encode_www_form({'location' => "#{location}", 'keyword' => @keyword, 'radius' => @radius, 'sensor' => SENSOR, 'key' => KEY})
+    address_uri = URI.encode_www_form({'address' => "#{@address}", 'sensor' => SENSOR})
+    get_response = Faraday.get { |request| request.url "http://maps.google.com/maps/api/geocode/json?#{address_uri}" }
+    body = JSON.parse(get_response.body)
+    results = body['results'].first['geometry']['location']
+    @search_latitude = results['lat']
+    @search_longitude = results['lng']
+    location = "#{@search_latitude},#{@search_longitude}"
+    @required = URI.encode_www_form({'location' => location, 'keyword' => @keyword, 'radius' => @radius, 'sensor' => SENSOR, 'key' => KEY})
 
   end
 

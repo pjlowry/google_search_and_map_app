@@ -25,15 +25,13 @@ def menu
 end
 
 def search
-  puts "Enter your latitude coordinate here:"
-  latitude = gets.chomp
-  puts "Enter your longitude coordinate here:"
-  longitude = gets.chomp
+  puts "Please enter an address:"
+  address = gets.chomp
   puts "What do you want to search for?"
   keyword = gets.chomp
   puts "How far do you want your search radius in meters?"
   radius = gets.chomp
-  search = Search.new(:keyword => keyword, :longitude => longitude, :latitude => latitude, :radius => radius)
+  search = Search.new(:keyword => keyword, :address => address, :radius => radius)
   results_array = search.results
   list(results_array, search)
 end

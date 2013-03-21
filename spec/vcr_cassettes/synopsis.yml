@@ -2,83 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBb-c6luucnupLoXKbttAdF57ncuIgRBZs&keyword=restaurant&location=38.578836,-121.48343&radius=1&sensor=false
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.8.6
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - ! '*/*'
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      Vary:
-      - Accept-Language
-      Date:
-      - Thu, 21 Mar 2013 00:22:01 GMT
-      Server:
-      - mafe
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Frame-Options:
-      - SAMEORIGIN
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: US-ASCII
-      string: ! "{\n   \"html_attributions\" : [],\n   \"results\" : [\n      {\n
-        \        \"geometry\" : {\n            \"location\" : {\n               \"lat\"
-        : 38.5780330,\n               \"lng\" : -121.48450\n            }\n         },\n
-        \        \"icon\" : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
-        \        \"id\" : \"9ac2eab73427294f194df6ea934c3b1476e0841d\",\n         \"name\"
-        : \"Lucca Restaurant & Bar\",\n         \"opening_hours\" : {\n            \"open_now\"
-        : true\n         },\n         \"price_level\" : 2,\n         \"rating\" :
-        4.10,\n         \"reference\" : \"CoQBdQAAAJrBFyvpa3JZ8AOcyR27PnpJO1m9sPEc5uAVNl-Tf56MRAYsvgAMBfbTToixgSCihm3gWsJFXLjrPi7PTOpT34ovhQ76E0UdBgrxYgn_HdeZszTpv-G0m2_M6D9duHnEidTslsXZ5zuJjWRoeEeHuVElbKcxiSCS6Jje9qmbvr00EhAZY5lRrD8Wi1lPAyibWTUsGhTT5uDYU3GhgD5W120HHNiaNnq4TA\",\n
-        \        \"types\" : [ \"restaurant\", \"food\", \"establishment\" ],\n         \"vicinity\"
-        : \"1615 J Street, Sacramento\"\n      },\n      {\n         \"geometry\"
-        : {\n            \"location\" : {\n               \"lat\" : 38.5786940,\n
-        \              \"lng\" : -121.4824450\n            }\n         },\n         \"icon\"
-        : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
-        \        \"id\" : \"d936f7d8fe79c094c47635a811458074be78856e\",\n         \"name\"
-        : \"Michelangelo's Restaurant\",\n         \"opening_hours\" : {\n            \"open_now\"
-        : true\n         },\n         \"price_level\" : 2,\n         \"rating\" :
-        4.0,\n         \"reference\" : \"CoQBdwAAAORZGaejf5PnLHolq_n_-qsTLqFVVuKg3ddmvBcZEiyT5AE9xL4C8uJiLLCaIJbbLXLAl1zYQAH4hzU-ctegXSvo-3LNL78zAuL34q4fS0sSkKnzihYMfczd2Ph1ixmlMDzlaL4wpfmMcpIqMIAIpoCHjOWG4jLuS85gaueOHRRkEhA3UMC9OQu2p8LrNPR1JOwCGhQccXCA1tt7QaRPlGJioKHvLk-5SA\",\n
-        \        \"types\" : [ \"restaurant\", \"food\", \"establishment\" ],\n         \"vicinity\"
-        : \"1725 I Street, Sacramento\"\n      },\n      {\n         \"geometry\"
-        : {\n            \"location\" : {\n               \"lat\" : 38.5772270,\n
-        \              \"lng\" : -121.4823260\n            }\n         },\n         \"icon\"
-        : \"http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png\",\n         \"id\"
-        : \"9de33c32f3858b0b1cd29b12d537931b747bee6f\",\n         \"name\" : \"Streets
-        of London Pub\",\n         \"opening_hours\" : {\n            \"open_now\"
-        : true\n         },\n         \"price_level\" : 1,\n         \"rating\" :
-        3.40,\n         \"reference\" : \"CoQBdAAAAPUBWWXdxrwg-FePhK6fTwvBHGHYx16sm6KNGLc59KK2rpwH6aLflF_rMAoafZWvEFFvSxVUfXtmsvCUy2C3O2pMZA11ANhnP7SqQKbmpBw1JcCHl608Jb1nb_lH8MeuQqFpyxo9JFylDYuKapfXHKkGeRkzEZBHeKaXgP90--YZEhDK1EM5DsHoE8DQkULssR4rGhQVlhEB2jPfiNvdtstOeNDf2aEpdw\",\n
-        \        \"types\" : [ \"bar\", \"restaurant\", \"food\", \"establishment\"
-        ],\n         \"vicinity\" : \"1804 J Street, Sacramento\"\n      },\n      {\n
-        \        \"geometry\" : {\n            \"location\" : {\n               \"lat\"
-        : 38.5774680,\n               \"lng\" : -121.4832680\n            }\n         },\n
-        \        \"icon\" : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
-        \        \"id\" : \"a454eff94ce978ef7c29c8daac5935ca9dd6719f\",\n         \"name\"
-        : \"Bread Store\",\n         \"opening_hours\" : {\n            \"open_now\"
-        : true\n         },\n         \"rating\" : 3.80,\n         \"reference\" :
-        \"CnRpAAAAKf3guWXST-cfXouQOTzJGybJdWL3sVCJdgvNrDixedibzyTDySOtCH-4rE1aHKxxJar8tu1eIWMjBVg5M2h5xmdhrhM_8WDoKnAsVb--twkrjgfWNBSsjDbdl749xWXKRLuSJQbuAYYk6Gx4yOzd7xIQycWL0TJlQyMcp1Y-_zY2GBoUBz1bdPEZqFj1Rl3PdHPvKP0tMkA\",\n
-        \        \"types\" : [ \"store\", \"meal_takeaway\", \"restaurant\", \"food\",
-        \"establishment\" ],\n         \"vicinity\" : \"1716 J Street, Sacramento\"\n
-        \     }\n   ],\n   \"status\" : \"OK\"\n}\n"
-    http_version: 
-  recorded_at: Thu, 21 Mar 2013 00:22:01 GMT
-- request:
-    method: get
-    uri: http://maps.googleapis.com/maps/api/directions/json?destination=38.578033,-121.4845&origin=38.578836,121.48343&sensor=false
+    uri: http://maps.google.com/maps/api/geocode/json?address=1715%20I%20st,%20Sacramento,%20CA&sensor=false
     body:
       encoding: US-ASCII
       string: ''
@@ -97,9 +21,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 21 Mar 2013 16:44:44 GMT
+      - Thu, 21 Mar 2013 23:46:13 GMT
       Expires:
-      - Fri, 22 Mar 2013 16:44:44 GMT
+      - Fri, 22 Mar 2013 23:46:13 GMT
       Cache-Control:
       - public, max-age=86400
       Vary:
@@ -116,7 +40,110 @@ http_interactions:
       - chunked
     body:
       encoding: US-ASCII
-      string: ! "{\n   \"routes\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+      string: ! "{\n   \"results\" : [\n      {\n         \"address_components\" :
+        [\n            {\n               \"long_name\" : \"1715\",\n               \"short_name\"
+        : \"1715\",\n               \"types\" : [ \"street_number\" ]\n            },\n
+        \           {\n               \"long_name\" : \"I Street\",\n               \"short_name\"
+        : \"I St\",\n               \"types\" : [ \"route\" ]\n            },\n            {\n
+        \              \"long_name\" : \"Central Sacramento\",\n               \"short_name\"
+        : \"Central Sacramento\",\n               \"types\" : [ \"neighborhood\",
+        \"political\" ]\n            },\n            {\n               \"long_name\"
+        : \"Sacramento\",\n               \"short_name\" : \"Sacramento\",\n               \"types\"
+        : [ \"locality\", \"political\" ]\n            },\n            {\n               \"long_name\"
+        : \"Sacramento\",\n               \"short_name\" : \"Sacramento\",\n               \"types\"
+        : [ \"administrative_area_level_2\", \"political\" ]\n            },\n            {\n
+        \              \"long_name\" : \"California\",\n               \"short_name\"
+        : \"CA\",\n               \"types\" : [ \"administrative_area_level_1\", \"political\"
+        ]\n            },\n            {\n               \"long_name\" : \"United
+        States\",\n               \"short_name\" : \"US\",\n               \"types\"
+        : [ \"country\", \"political\" ]\n            },\n            {\n               \"long_name\"
+        : \"95811\",\n               \"short_name\" : \"95811\",\n               \"types\"
+        : [ \"postal_code\" ]\n            }\n         ],\n         \"formatted_address\"
+        : \"1715 I Street, Sacramento, CA 95811, USA\",\n         \"geometry\" : {\n
+        \           \"location\" : {\n               \"lat\" : 38.5790160,\n               \"lng\"
+        : -121.4827530\n            },\n            \"location_type\" : \"ROOFTOP\",\n
+        \           \"viewport\" : {\n               \"northeast\" : {\n                  \"lat\"
+        : 38.58036498029149,\n                  \"lng\" : -121.4814040197085\n               },\n
+        \              \"southwest\" : {\n                  \"lat\" : 38.57766701970849,\n
+        \                 \"lng\" : -121.4841019802915\n               }\n            }\n
+        \        },\n         \"types\" : [ \"street_address\" ]\n      }\n   ],\n
+        \  \"status\" : \"OK\"\n}\n"
     http_version: 
-  recorded_at: Thu, 21 Mar 2013 16:44:44 GMT
+  recorded_at: Thu, 21 Mar 2013 23:46:13 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBb-c6luucnupLoXKbttAdF57ncuIgRBZs&keyword=restaurant&location=38.579016,-121.482753&radius=1&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Language
+      Date:
+      - Thu, 21 Mar 2013 23:46:14 GMT
+      Server:
+      - mafe
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"html_attributions\" : [],\n   \"results\" : [\n      {\n
+        \        \"geometry\" : {\n            \"location\" : {\n               \"lat\"
+        : 38.5786940,\n               \"lng\" : -121.4824450\n            }\n         },\n
+        \        \"icon\" : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
+        \        \"id\" : \"d936f7d8fe79c094c47635a811458074be78856e\",\n         \"name\"
+        : \"Michelangelo's Restaurant\",\n         \"opening_hours\" : {\n            \"open_now\"
+        : true\n         },\n         \"price_level\" : 2,\n         \"rating\" :
+        4.0,\n         \"reference\" : \"CoQBdwAAAHEn3NrOd-L3m1oLiuYP3NNQhsA2bjFWpy6RNp5pXPlqqT_4jf6zYQDK8V0AoHlTA46epMmsZjjGbYcZlLemfk_Cmimsh0KTQWaH6wzQNQID76cf-pJwcVav_1FY2khNeeeG7u4kZ7zg6aap-jERAvD0Bq6i-dv2VCK20UQgeDAZEhD5oJnSL5an0Yqj3zPWQcQ4GhShY6V__7naHXcDVX7Ae0Eg98nqOA\",\n
+        \        \"types\" : [ \"restaurant\", \"food\", \"establishment\" ],\n         \"vicinity\"
+        : \"1725 I Street, Sacramento\"\n      },\n      {\n         \"geometry\"
+        : {\n            \"location\" : {\n               \"lat\" : 38.5780330,\n
+        \              \"lng\" : -121.48450\n            }\n         },\n         \"icon\"
+        : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
+        \        \"id\" : \"9ac2eab73427294f194df6ea934c3b1476e0841d\",\n         \"name\"
+        : \"Lucca Restaurant & Bar\",\n         \"opening_hours\" : {\n            \"open_now\"
+        : false\n         },\n         \"price_level\" : 2,\n         \"rating\" :
+        4.10,\n         \"reference\" : \"CoQBdQAAAFPBCuul3bSKk5mdFLQcQ2_OmbzCm-WmuCxDtpPgOEvPY8KkHf2jAq0urj5p_1EUKxnomaxAR76hZuxgWEMTnCpfIKhF_PWdJ3s-J7bDSJrg2rDJCDR3t3jkbFiFcqDe-waVHdqJkSPmQl94QKYOdhhaKxPY283Ox32zT2VsGNVwEhBrpg8-19FQQjmnu940a7CBGhRAMJh9r2vZbYGBoVBqw81K9VRC_g\",\n
+        \        \"types\" : [ \"restaurant\", \"food\", \"establishment\" ],\n         \"vicinity\"
+        : \"1615 J Street, Sacramento\"\n      },\n      {\n         \"geometry\"
+        : {\n            \"location\" : {\n               \"lat\" : 38.5772270,\n
+        \              \"lng\" : -121.4823260\n            }\n         },\n         \"icon\"
+        : \"http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png\",\n         \"id\"
+        : \"9de33c32f3858b0b1cd29b12d537931b747bee6f\",\n         \"name\" : \"Streets
+        of London Pub\",\n         \"opening_hours\" : {\n            \"open_now\"
+        : true\n         },\n         \"price_level\" : 1,\n         \"rating\" :
+        3.40,\n         \"reference\" : \"CoQBdAAAACYsF-1k5cAs3BqfQ3sWQ78cGTqJcej4MUIFtFvliQwsocR30jlsa_LsDMLtCqzeH8NbFbTH9RlwaS-akL5SwG-bKz2gwiHUddNYGpHi3B5tZWOO-GYa9ebTCDSyZXEsABWatDxfhj-dTrgWRtpx3-36h75xv14vKRNohAZUzNe_EhDn4xxqpR-LKnh7ZHrr-HB0GhSyY0d73liCvyH2jIzE5zNyBLpZKQ\",\n
+        \        \"types\" : [ \"bar\", \"restaurant\", \"food\", \"establishment\"
+        ],\n         \"vicinity\" : \"1804 J Street, Sacramento\"\n      },\n      {\n
+        \        \"geometry\" : {\n            \"location\" : {\n               \"lat\"
+        : 38.5774680,\n               \"lng\" : -121.4832680\n            }\n         },\n
+        \        \"icon\" : \"http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png\",\n
+        \        \"id\" : \"a454eff94ce978ef7c29c8daac5935ca9dd6719f\",\n         \"name\"
+        : \"Bread Store\",\n         \"opening_hours\" : {\n            \"open_now\"
+        : true\n         },\n         \"rating\" : 3.80,\n         \"reference\" :
+        \"CnRpAAAApMlOUvahkTSGEKXbSXLJUH-0qSFCAcobT1n4bwZePy31wBH8gbrIqKvT2jXNyz9xmqUh3e8u0sxwhy4955nPoWj1EV1SfxuSOf7F3UNPOA_MxUHywwrrAurmp82AsvFNyZJ8eCfOt0fxJrLWsAmTpRIQ0JKBS5r1YVaDTPqUh7KUOBoU9AcZjvVjIeoyYy9di3-vl5xtgvU\",\n
+        \        \"types\" : [ \"store\", \"meal_takeaway\", \"restaurant\", \"food\",
+        \"establishment\" ],\n         \"vicinity\" : \"1716 J Street, Sacramento\"\n
+        \     }\n   ],\n   \"status\" : \"OK\"\n}\n"
+    http_version: 
+  recorded_at: Thu, 21 Mar 2013 23:46:14 GMT
 recorded_with: VCR 2.4.0

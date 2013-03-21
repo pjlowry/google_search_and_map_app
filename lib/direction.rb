@@ -5,7 +5,7 @@ class Direction
     @lat = result.lat
     @lng = result.lng
 
-    location = "#{search.latitude},#{search.longitude}"
+    location = "#{search.search_latitude},#{search.search_longitude}"
     destination = "#{@lat},#{@lng}"
     required = URI.encode_www_form({'origin' => "#{location}", 'destination' => "#{destination}", 'sensor' => SENSOR})
 

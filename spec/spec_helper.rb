@@ -3,11 +3,9 @@ require 'faraday'
 require 'json'
 require 'webmock/rspec'
 require 'active_model'
-require 'user'
 require 'search'
 require 'result'
 require 'direction'
-require 'shoulda-matchers'
 require 'vcr'
 
 
