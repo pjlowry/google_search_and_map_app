@@ -1,7 +1,6 @@
 require 'rspec'
 require 'faraday'
 require 'json'
-require 'base64'
 require 'webmock/rspec'
 require 'active_model'
 require 'user'
@@ -10,6 +9,7 @@ require 'result'
 require 'direction'
 require 'shoulda-matchers'
 require 'vcr'
+
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr_cassettes'

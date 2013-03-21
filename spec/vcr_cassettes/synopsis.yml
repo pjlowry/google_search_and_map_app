@@ -76,4 +76,47 @@ http_interactions:
         \     }\n   ],\n   \"status\" : \"OK\"\n}\n"
     http_version: 
   recorded_at: Thu, 21 Mar 2013 00:22:01 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/directions/json?destination=38.578033,-121.4845&origin=38.578836,121.48343&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 21 Mar 2013 16:44:44 GMT
+      Expires:
+      - Fri, 22 Mar 2013 16:44:44 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "{\n   \"routes\" : [],\n   \"status\" : \"ZERO_RESULTS\"\n}\n"
+    http_version: 
+  recorded_at: Thu, 21 Mar 2013 16:44:44 GMT
 recorded_with: VCR 2.4.0

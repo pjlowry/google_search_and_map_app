@@ -34,13 +34,12 @@ def search
   puts "How far do you want your search radius in meters?"
   radius = gets.chomp
   search = Search.new(:keyword => keyword, :longitude => longitude, :latitude => latitude, :radius => radius)
-  p search
-  p results_array = search.results
-  list(results_array)
+  results_array = search.results
+  list(results_array, search)
 end
 
-def list(results_array)
-  p results_array
+def list(results_array, search)
+  results_array
   puts "Here are your search results:"
   results_array.each_with_index do |result, i|
     puts "#{i + 1}."
@@ -51,24 +50,34 @@ def list(results_array)
   choice = gets.chomp
   case choice
     when 'p'
-      pick(results_array)
+      pick(results_array, search)
     when 'r'
-      random(results_array)
+      random(results_array, search)
     else
     invalid
   end
 end
 
-def pick(results_array)
+def pick(results_array, search)
   puts "Please select the number of the destination:"
   choice = gets.chomp
-  direction = Direction.new(result_array[choice - 1])
+  puts "\n\n"
+  direction = Direction.new(results_array[choice.to_i - 1], search)
+  direction.routes.each {|route| puts route }
+  puts "\n\n"
 end
 
-def random(results_array)
-  puts "You are going here .........."
+def random(results_array, search)
+  result = results_array[rand(results_array.length - 1)]
+  direction = Direction.new(result, search)
+  puts "\n\n"
+  puts "You are going here #{result.name}"
+  direction.routes.each {|route| puts route }
+  puts "\n\n"
 end
 
-
+def invalid
+  puts "Try again Braj!"
+end
 
 welcome

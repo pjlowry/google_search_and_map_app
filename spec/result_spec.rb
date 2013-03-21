@@ -16,13 +16,13 @@ describe Result do
     end
 
     it 'shows the latitude' do 
-      result = Result.new(:name => "Hacker Lab", :address => '1715 I Street, Sacramento, CA', :lat => '38.577227', :lng => '121.482326')
+      result = Result.new(:name => "Hacker Lab", :address => '1715 I Street, Sacramento, CA', :lat => '38.577227', :lng => '-121.482326')
       result.lat.should eq '38.577227'
     end
 
     it 'shows the longitude' do 
-      result = Result.new(:name => "Hacker Lab", :address => '1715 I Street, Sacramento, CA', :lat => '38.577227', :lng => '121.482326')
-      result.lng.should eq '121.482326'
+      result = Result.new(:name => "Hacker Lab", :address => '1715 I Street, Sacramento, CA', :lat => '38.577227', :lng => '-121.482326')
+      result.lng.should eq '-121.482326'
     end
 
     it 'shows address' do
@@ -33,8 +33,8 @@ describe Result do
 
   context '#==' do  
     it 'two result objects are equal if there readers are the same' do  
-      result1 = Result.new(:name => "Lucca Restaurant & Bar", :address => '1615 J Street, Sacramento', :lat => '38.5780330', :lng => '121.48450')
-      result2 = Result.new(:name => "Lucca Restaurant & Bar", :address => '1615 J Street, Sacramento', :lat => '38.5780330', :lng => '121.48450')
+      result1 = Result.new(:name => "Lucca Restaurant & Bar", :address => '1615 J Street, Sacramento', :lat => '38.5780330', :lng => '-121.48450')
+      result2 = Result.new(:name => "Lucca Restaurant & Bar", :address => '1615 J Street, Sacramento', :lat => '38.5780330', :lng => '-121.48450')
       result1.should eq result2
     end
   end

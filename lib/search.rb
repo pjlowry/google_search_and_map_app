@@ -11,7 +11,7 @@ class Search
     @radius = options[:radius]
     @keyword = options[:keyword]
 
-    location = "#{latitude},-#{longitude}"
+    location = "#{latitude},#{longitude}"
     @required = URI.encode_www_form({'location' => "#{location}", 'keyword' => @keyword, 'radius' => @radius, 'sensor' => SENSOR, 'key' => KEY})
 
   end
