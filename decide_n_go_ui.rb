@@ -20,6 +20,7 @@ def menu
       exit
     else
       invalid
+      menu
     end
   end
 end
@@ -52,7 +53,8 @@ def list(results_array, search)
     when 'r'
       random(results_array, search)
     else
-    invalid
+      invalid
+      list(results_array, search)
   end
 end
 
